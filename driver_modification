@@ -1,4 +1,4 @@
-NOTE: You need to make and install evertime you have a kernel upgrade
+----------------NOTE: You need to make and install evertime you have a kernel upgrade-----------
 
 sudo apt update
 sudo apt upgrade
@@ -6,7 +6,7 @@ sudo apt install bc
 sudo apt-get install build-essential 
 sudo apt-get install libelf-dev 
 
-!Try either of these commands to see which works:
+------------------Try either of these commands------------------
 sudo apt-get install linux-headers-`uname -r`
 sudo apt-get install linux-headers-5.10.0-kali6-amd64
 
@@ -23,3 +23,8 @@ cd rtl8188eus
 sudo make
 sudo make install
 sudo modprobe 8188eu
+
+
+------To start monitor mode for checking --------
+airmon-ng check kill
+airmon-ng start interface_name
